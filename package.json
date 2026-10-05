@@ -1,0 +1,36 @@
+{
+  "name": "pi-optimize",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pi extension: Alt+O / /optimize rewrites the current input draft into a clearer, structured prompt. Also ships an equivalent Antigravity (agy) skill.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "prompt",
+    "optimize",
+    "antigravity",
+    "agy"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/optimize-prompt.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "bash test/run.sh"
+  }
+}
